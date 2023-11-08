@@ -1,0 +1,162 @@
+html{
+    background-color: rgb(19, 16, 16);
+    border: 1px solid rgb(255, 255, 255);
+    /* margin: 0.5% 0.5% 0.5% 0.5%; */
+}
+
+    div#RS{
+        background-color: azure;
+        width: 100%;
+        height: 3.5em;
+        position: static;
+        
+    }
+    div#menu{
+        background-color: rgb(226, 163, 92);
+        width: 100%;
+        height: 8.5em;
+        position: static;
+    }
+    
+
+
+    #presentacion {
+        display: flex; /* Utiliza flexbox para distribuir las cajas horizontalmente */
+         /* Distribuye las cajas al principio, entre ellas y al final del contenedor */
+    }
+    
+    #presentacion > div {
+        flex: 1; /* Hace que todas las cajas ocupen el mismo espacio horizontal */
+        border: 1px solid #000; /* Agrega un borde para visualización */
+        text-align: center; /* Centra el contenido en las cajas */
+    }
+      #flecha{
+        color: aliceblue;
+        vertical-align: center;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bolder;
+        float: left;
+
+    } 
+
+    
+    #imagen{
+        background-image: url('../imagenes/future.jpg');
+        background-repeat: no-repeat;
+        background-size: contain; 
+        display: flex;
+        justify-content: center;
+        flex: 1;
+
+    }
+    #sesion{
+        background-color: rgb(19, 16, 16);
+        
+    } 
+
+     #principal{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+        float: left;
+        
+        
+    }
+    #arribaimagen{
+        width: 70%;
+         margin: auto;
+         background-color: gray;
+         color: aliceblue;
+         /* padding: 2px 0em 0em 4em; */
+         /* float: left;
+         position: static;*/
+         /* vertical-align: middle; */
+    }
+
+    #datos1, #datos2{
+        background-color: aquamarine;
+        width: 65%;
+        padding: 30px;
+        /* float: left; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #texto1, #texto2{
+        background-color: rgb(255, 255, 255);
+        position: static;
+        width: 33%;
+        height: 13em;
+        float: left;
+    }
+
+    #imagen1{
+        background-image: url("imagenes/ciclo.jpg");
+        float: left;
+        position: static;
+        width: 33%;
+        height: 13em;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    #imagen2{
+        background-image: url("imagenes/esquema.png");
+        float: left;
+        position: static;
+        width: 33%;
+        height: 13em;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #textocentro{
+        color: aqua;
+        text-align: center;
+        font-style: italic;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 3em;
+    }
+
+    #final{
+        /* vertical-align: bottom; */
+        background-color: rgb(50, 63, 63);
+        width: 100%;
+        height: 5em;
+        position: static;
+
+    }
+
+
+   
+
+
+   /*
+    @media screen and (max-width: 1000px) { 
+        div#RS{
+
+            height: 2em;
+            position: relative;
+        }
+        div#menu{
+            height: 7em;
+            position: relative;
+        }
+        
+        div#presentacion{
+            background-size: contain;
+            background-position: center;
+            height: 15em;
+            position: relative;
+        }
+        
+        div#sesion{
+            width: 20%;
+            float: right;
+            margin-right: 2em;
+            margin-top: 5em;
+        }
+       }*/

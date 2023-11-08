@@ -1,0 +1,237 @@
+html{
+    /* background-color: rgb(39, 39, 46); */
+    border: 1px solid rgb(255, 255, 255);
+    /* margin: 0.5% 0.5% 0.5% 0.5%; */
+    
+}
+
+    div#RS{
+        background-color: azure;
+        width: 100%;
+        height: 2.6em;
+        position: static;
+        
+        
+        
+    }
+    div.RS img{
+        width: 32px;
+        max-height: 32px;
+        float: left;
+        padding: 5px;
+        position:relative;
+        left: 70%;
+        filter: contrast(20%);
+    }
+    
+    div#menu{
+        background-color: rgb(231, 148, 92);
+        width: 100%;
+        height: 8.5em;
+        max-height: 8.5em;
+        overflow:hidden;
+        position: static;
+        
+    }
+    div#menu h2{
+        color: rgb(255, 255, 255);
+        opacity: 60%;
+        position: relative;
+        top: 50%;
+        left: 15%;
+    }
+    div#nav{
+        position: relative;
+        top:15%;
+        left: 60%;
+        word-spacing: 20px;
+        
+    }
+    div#nav a{
+        color: rgb(25, 74, 61);
+        text-decoration:none;
+        font-weight: bolder;
+    }
+    div#nav a:hover{
+        color:  rgb(177, 231, 224);
+
+    }
+    div#nav img{
+        width: 20px;
+        height: 20px;
+        position: static;
+    }
+    div#nav img:hover{
+        filter: contrast(20%);
+    }
+    
+
+
+    #presentacion{
+        float: left;
+        position: relative;
+        max-height: 13em;
+        height: 13em;
+        width: 100%;
+        background-image: url('imagenes/sus.png');
+        background-repeat: no-repeat; 
+        background-size:contain;
+        background-position: center;
+        
+    }
+      #flecha{
+        color: aliceblue;
+        vertical-align: center;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bolder;
+        float: left;
+        position: static;
+        width: 30%;
+        height: 11em;
+        
+
+    } 
+
+    #sesion{
+        background-color: rgb(255, 255, 255); 
+        
+        
+        float: left;
+        position: relative;
+        top: 20%;
+        left: 45%;
+        border-radius: 5px;
+        
+    }
+    #sesion input{
+        background-color: gray;
+        color: white;
+        padding-left: 5px;
+        margin: 7px;
+        border-radius: 5px;
+    }
+    div#sesion img{
+        width: 20px;
+        height: 20px;
+    }
+
+     #principal{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100%;
+        float: left;
+        
+        
+    }
+    #arribaimagen{
+        width: 70%;
+         margin: auto;
+         background-color: gray;
+         color: aliceblue;
+         /* padding: 2px 0em 0em 4em; */
+         /* float: left;
+         position: static;*/
+         /* vertical-align: middle; */
+    }
+
+    #datos1, #datos2{
+        padding: 18px; 
+        /* float: left; */
+        margin: auto;
+        display: flex;
+        justify-content: center; 
+        border-radius: 0.2em;
+        width: 65%;
+        overflow:none;
+    }
+
+    #datos1{
+        background-color: rgb(177, 231, 224);
+    }
+    #datos2{
+        background-color: rgb(23, 114, 126);
+        
+        
+    }
+
+    #texto1, #texto2{
+        background-color: rgb(255, 255, 255);
+        /* position: static;
+        width: 33%;
+        height: 9em; */
+        
+    } 
+
+    #texto1{
+        height: auto;
+        width: 50%;
+        min-width: 50%;
+        border-radius: 5px;
+        
+    }
+    #imagen1{
+        margin-left: 9px;
+        width: 60%;
+        padding: 8px;
+        padding-top: 10px;
+        overflow:none;
+        
+    }
+
+    #imagen1 img{
+        width: 100%;
+        border: 0.6em solid rgb(23, 114, 126);
+        border-left: 0.4em solid rgb(23, 114, 126);
+        border-right: 0.4em solid rgb(23, 114, 126);
+        border-radius: 5px;
+    }
+
+    #texto2{
+        height: auto;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 45%;
+        min-width: 45%;
+        border-radius: 5px;
+        margin-right: 0px;
+        padding-right: 0px;
+
+        margin-left: 8%;
+        
+    }
+    #imagen2{
+        margin-right:30px ;
+        width: 40%;
+        
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-right: 16px;
+        overflow:none;
+        
+        
+    }
+
+    #imagen2 img{
+        width: 100%;
+        border: 0.6em solid rgb(177, 231, 224);
+        border-radius: 5px;
+    }
+
+    
+
+    #textocentro{
+        color: rgb(23, 114, 126);
+        text-align: center;
+        font-style: italic;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 3em;
+    }
+
+    #final{
+        /* vertical-align: bottom; */
+        background-color: rgb(50, 63, 63);
+        width: 100%;
+        height: 5em;
+        position: static;
+    }
