@@ -1,17 +1,15 @@
 html{
-    /* background-color: rgb(39, 39, 46); */
+     background-color: rgb(39, 39, 46);
     border: 1px solid rgb(255, 255, 255);
     /* margin: 0.5% 0.5% 0.5% 0.5%; */
     
 }
 
     div#RS{
-        background-color: azure;
+        background-color: rgb(255, 255, 255);
         width: 100%;
         height: 2.6em;
         position: static;
-        
-        
         
     }
     div.RS img{
@@ -24,8 +22,9 @@ html{
         filter: contrast(20%);
     }
     
+    
     div#menu{
-        background-color: rgb(231, 148, 92);
+        background-color: rgb(231, 148, 92,96%);
         width: 100%;
         height: 8.5em;
         max-height: 8.5em;
@@ -53,7 +52,7 @@ html{
         font-weight: bolder;
     }
     div#nav a:hover{
-        color:  rgb(177, 231, 224);
+        color:  rgb(149, 224, 215);
 
     }
     div#nav img{
@@ -70,8 +69,8 @@ html{
     #presentacion{
         float: left;
         position: relative;
-        max-height: 13em;
-        height: 13em;
+        max-height: 15em;
+        height: 15em;
         width: 100%;
         background-image: url('imagenes/sus.png');
         background-repeat: no-repeat; 
@@ -95,25 +94,52 @@ html{
 
     #sesion{
         background-color: rgb(255, 255, 255); 
-        
-        
         float: left;
         position: relative;
-        top: 20%;
-        left: 45%;
-        border-radius: 5px;
+        top: 16%;
+        left: 50%;
+        border-radius:0px;
+        width: 16%;
         
     }
+    
     #sesion input{
         background-color: gray;
         color: white;
         padding-left: 5px;
         margin: 7px;
         border-radius: 5px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    #sesion input::placeholder{
+        color: rgb(212, 212, 212);
     }
     div#sesion img{
         width: 20px;
         height: 20px;
+    }
+    div#sesion button{
+        color: rgb(255, 255, 255);
+        background-color:rgb(0, 141, 115);
+        border-radius: 5px;
+        float: right;
+        height: 33px;
+        margin-right: 17px;
+    }
+
+    div#sesion ul {
+        margin: 0px;
+        padding: 0px;
+        padding-left: 23px;
+        color: rgb(0, 141, 115);
+    }
+    #sesion li a{
+        color:rgb(0, 141, 115);
+        text-decoration: none;
+        font-size: 0.8em;
+
     }
 
      #principal{
@@ -143,11 +169,12 @@ html{
         justify-content: center; 
         border-radius: 0.2em;
         width: 65%;
+        min-width: 65%;
         overflow:none;
     }
 
     #datos1{
-        background-color: rgb(177, 231, 224);
+        background-color: rgb(149, 224, 215);
     }
     #datos2{
         background-color: rgb(23, 114, 126);
@@ -214,7 +241,7 @@ html{
 
     #imagen2 img{
         width: 100%;
-        border: 0.6em solid rgb(177, 231, 224);
+        border: 0.6em solid rgb(149, 224, 215);
         border-radius: 5px;
     }
 
@@ -234,4 +261,28 @@ html{
         width: 100%;
         height: 5em;
         position: static;
+    }
+    div#final h3{
+        color: rgb(255, 255, 255);
+        
+        
+        
+        
+    }
+    div.RS2 img{
+        width: 32px;
+        max-height: 32px;
+        float: left;
+        padding: 5px;
+        position:relative;
+        left: 70%;
+        filter: contrast(0%);
+        top: 20px;
+    }
+    div#final p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        
     }
