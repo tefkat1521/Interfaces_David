@@ -1,7 +1,6 @@
 html{
      background-color: rgb(39, 39, 46);
     border: 1px solid rgb(255, 255, 255);
-    /* margin: 0.5% 0.5% 0.5% 0.5%; */
     
 }
 /****************************CABECERA MÁS ALTA****************************/
@@ -26,6 +25,7 @@ html{
     }
     
     
+    /**************************CABECERA CON EL MENÚ******************************/
     div#menu{
         background-color: rgb(231, 148, 92,96%);
         width: 100%;
@@ -42,6 +42,8 @@ html{
         top: 50%;
         left: 15%;
     }
+
+    /****************************BOTONES DENTRO DEL MENÚ****************************/
     div#nav{
         position: relative;
         top:15%;
@@ -68,7 +70,7 @@ html{
     }
     
 
-
+/****************************DEBAJO DEL MENÚ****************************/
     #presentacion{
         float: left;
         position: relative;
@@ -81,6 +83,7 @@ html{
         background-position: center;
         
     }
+    /***************************LA FLECHA A LA IZQUIERDA EN LA PRESENTACIÓN*****************************/
       #flecha{
         color: aliceblue;
         vertical-align: center;
@@ -94,7 +97,7 @@ html{
         
 
     } 
-
+/****************************CUADRO PARA LA SESIÓN****************************/
     #sesion{
         background-color: rgb(255, 255, 255); 
         float: left;
@@ -150,14 +153,16 @@ html{
         color:rgb(0, 33, 141);
     }
 
+
+    /****************************DIV QUE OCUPA LA PARTE CENTRAL DE LA PÁGINA****************************/
      #principal{
         background-color: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
-        float: left;
-        
-        
+        float: left;  
     }
+
+    /****************************TEXTO CON EL FONDO GRIS****************************/
     #arribaimagen{
         width: 70%;
          margin: auto;
@@ -165,9 +170,17 @@ html{
          color: aliceblue;
     }
 
+    #arribaimagen p{
+        padding: 0.5%;
+        padding-left: 2em;
+        padding-top: 1%;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+
+    /****************************CUADROS CON INFORMACIÓN EN LA MITAD DE LA PÁGINA****************************/
     #datos1, #datos2{
         padding: 18px; 
-        /* float: left; */
         margin: auto;
         display: flex;
         justify-content: center; 
@@ -188,9 +201,6 @@ html{
 
     #texto1, #texto2{
         background-color: rgb(255, 255, 255);
-        /* position: static;
-        width: 33%;
-        height: 9em; */
         font-size: 1.3em;
         color: rgb(31, 31, 31);
         text-align: justify;
@@ -254,17 +264,17 @@ html{
     }
 
     
-
+/****************************TEXTO ENTRE CUADROS DE INFORMACIÓN****************************/
     #textocentro{
         color: rgb(23, 114, 126);
         text-align: center;
         font-style: italic;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 3em;
+        font-family:Bradley Hand, Comic Sans, cursive;
+        font-size: 1.5em;
     }
 
+    /****************************PIE DE PÁGINA****************************/
     #final{
-        /* vertical-align: bottom; */
         background-color: rgb(50, 63, 63);
         width: 100%;
         height: 5em;
@@ -297,7 +307,8 @@ html{
         color: rgb(255, 255, 255);
         margin: 0%;
         padding: 0%;
-        position:relative;
+        margin-right: 13%;
         text-align: center;
+
 
     }
