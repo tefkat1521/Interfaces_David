@@ -21,6 +21,9 @@ html{
         left: 70%;
         filter: contrast(20%);
     }
+    div.RS img:hover{
+        filter: contrast(120%);
+    }
     
     
     div#menu{
@@ -267,13 +270,7 @@ html{
         height: 5em;
         position: static;
     }
-    div#final h3{
-        color: rgb(255, 255, 255);
-        
-        
-        
-        
-    }
+    
     div.RS2 img{
         width: 32px;
         max-height: 32px;
@@ -284,10 +281,23 @@ html{
         filter: contrast(0%);
         top: 20px;
     }
-    div#final p{
+    div.RS2 img:hover{
+        filter: contrast(100%);
+    }
+    div#final h3{
         color: rgb(255, 255, 255);
-        text-align: center;
+        position:static;
+        display: block;
+        height: 5px;
         margin: 0%;
         padding: 0%;
         
+    }
+    div#final p{
+        color: rgb(255, 255, 255);
+        margin: 0%;
+        padding: 0%;
+        position:relative;
+        text-align: center;
+
     }
