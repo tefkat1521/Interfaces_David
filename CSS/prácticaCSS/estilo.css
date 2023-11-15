@@ -67,6 +67,7 @@ html{
     }
     div#nav img:hover{
         filter: contrast(20%);
+        
     }
     
 
@@ -86,14 +87,13 @@ html{
     /***************************LA FLECHA A LA IZQUIERDA EN LA PRESENTACIÓN*****************************/
       #flecha{
         color: aliceblue;
-        vertical-align: center;
         text-align: center;
         font-size: 4em;
         font-weight: bolder;
         float: left;
-        position: static;
         width: 30%;
         height: 11em;
+        font-family:Bradley Hand, Comic Sans, cursive;
     } 
 /****************************CUADRO PARA LA SESIÓN****************************/
     #sesion{
