@@ -52,7 +52,7 @@ html{
         
     }
     div#nav a{
-        color: rgb(25, 74, 61);
+        color: rgb(23, 114, 126);
         text-decoration:none;
         font-weight: bolder;
     }
@@ -94,8 +94,6 @@ html{
         position: static;
         width: 30%;
         height: 11em;
-        
-
     } 
 /****************************CUADRO PARA LA SESIÓN****************************/
     #sesion{
@@ -103,7 +101,7 @@ html{
         float: left;
         position: relative;
         top: 16%;
-        left: 50%;
+        left: 45%;
         border-radius:0px;
         width: 16%;
         
@@ -217,10 +215,11 @@ html{
         
     }
     #imagen1{
-        margin-left: 9px;
+        margin-left: 14px;
         width: 60%;
-        padding: 8px;
-        padding-top: 10px;
+        padding: 13px;
+        padding-top: 15px;
+        margin-right: 19px;
         overflow:none;
         
     }
