@@ -1,22 +1,54 @@
-#todo{
-    height: auto;
-    background-color: rgb(136, 136, 136);
-}
-
-
 
 @media all and (max-width: 768px) {
     #todo{
-        display: flex;
-        flex-flow:row wrap;
-    }
-    #redes{
-        justify-self: flex-end;
-    }
-    #redes img{
-        width: 26px;
+        height: auto;
         
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
     }
+
+    #cabecera {
+        background-color: rgb(255, 142, 49);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #cabecera_menu img{
+        width: 2em;
+    }
+    #cabecera_menu button{
+        all:initial;
+    }
+    
+    #redes {
+        margin-left: auto; /* Esto alinea el elemento al final a la derecha */
+    }
+    
+    #redes img {
+        width: 2em;
+    }
+
+
+    #cabecera_img {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centra el contenido horizontalmente */
+        align-items: flex-start; /* Alinea el contenido hacia arriba */
+    }
+
+ 
+
+    #medio{
+        background-color:aqua;
+    }
+
+    #pie{
+        background-color: gray;
+    }
+
+
 }
 
 
