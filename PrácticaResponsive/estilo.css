@@ -55,15 +55,9 @@
 
 
 @media all and (max-width: 992px) {
-    #todo{
-        height: 100%;
-        background-color: rgb(136, 136, 136);
-    }
+    
 }
 
 @media all and (min-width: 993px) {
-    #todo{
-        height: 100%;
-        background-color: rgb(136, 136, 136);
-    }
+    
 }
