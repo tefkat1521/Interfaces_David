@@ -1,70 +1,4 @@
 
-/* @media all and (max-width: 768px) {
-    #todo{
-        height: auto;
-        
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    
-    }
-
-    #cabecera {
-        background-color: rgb(255, 142, 49);
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #cabecera_menu img{
-        width: 2em;
-    }
-    #cabecera_menu button{
-        all:initial;
-    }
-    
-    #redes {
-        margin-left: auto; /* Esto alinea el elemento al final a la derecha */
-    /*}
-    
-    #redes img {
-        width: 2em;
-    }
-
-
-    #cabecera_img {
-        width: 100%;
-        display: flex;
-        justify-content: center; /* Centra el contenido horizontalmente */
-       /* align-items: flex-start; /* Alinea el contenido hacia arriba */
-   /* }
-
- 
-
-    #medio{
-        background-color:aqua;
-    }
-
-    #pie{
-        background-color: gray;
-    }
-
-
-
-
-
-
-
-@media all and (max-width: 992px) {
-    
-}
-
-@media all and (min-width: 993px) {
-    #todo{
-        height: 100%;
-        background-color: rgb(136, 136, 136);
-    }
-} */
-
 #todo{
     display: grid;
 }
@@ -77,14 +11,30 @@
     }
 
     #cabecera {
-        /* background-color: rgb(255, 142, 49); */
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
+        grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
+        width: 100%;
     }
 
-    #cabecera_menu img{
-        width: 2em;
+    
+
+    #cabecera_menu {
+        background-color: orange;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        width: 100%;
+        height: 2em;
+        
     }
+    
+    #cabecera_menu img {
+        width: 1em;
+
+    }
+
 
     #redes {
         margin-left: auto; /* Esto alinea el elemento al final a la derecha */
@@ -95,16 +45,56 @@
     }
 
 
-    #cabecera_img {
+    #inicial {
         width: 100%;
+        max-width: 100%;
         display: flex;
-        justify-content: center; /* Centra el contenido horizontalmente */
-        align-items: flex-start; /* Alinea el contenido hacia arriba */
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
     }
 
-    #cabecera_img img{
-    width: 100%;
+    #inicial img{
+    width: 80%;
+    
     }
+
+    #sesion{
+        background-color: rgb(53, 53, 53);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: auto;
+        height: 20em;
+        align-items: center;
+        justify-content:space-around;
+    }
+    #sesion input{
+        background-color: gray;
+        color: white;
+        
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    #sesion input::placeholder{
+        color: rgb(212, 212, 212);
+    }
+    div#sesion button{
+        color: rgb(255, 255, 255);
+        background-color:rgb(0, 141, 115);
+        border-radius: 5px;
+        height: 2em;
+        width: fit-content;
+    }
+    div#sesion button:hover{
+        background-color:rgb(0, 33, 141);
+    }
+    #sesion img{
+        width: 2em;
+        }
+    
+
 
     #medio{
         
