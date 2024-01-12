@@ -158,7 +158,7 @@
     }
 }
 
-@media all and (min-width: 993px) {
+@media all and (min-width: 1024px) {
     #todo{
         height: 100%;
         background-color: rgb(136, 136, 136);
