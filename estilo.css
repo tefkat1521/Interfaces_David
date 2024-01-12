@@ -2,14 +2,9 @@
 #todo{
     display: grid;
     height: 100%;
+    font-size: 40px;
 }
 
-    #todo{
-        height: auto;
-        display: grid;
-
-    
-    }
 
     #cabecera {
         display: grid;
@@ -97,18 +92,56 @@
         }
 
     #medio{
+        display: grid;
+        grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
+        grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
+        width: 80%;
+        justify-self: center;
         
+        
+    }
+
+    #cuadro1{
+        background-color: rgb(149, 224, 215);
+        display: grid;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+        
+        
+    }
+
+    #cuadro2{
+        background-color: rgb(23, 114, 126);
+        display: grid;
+        justify-self: center;
+        width: 100%;
+        
+        
+        
+    }
+    #imagen1{
+        border: solid black 5px;
+        
+        
+    }
+    #imagen2{
+        border: solid black 5px;
+        
+    }
+
+    #imagen1 img, #imagen2 img{
+        width: 100%;
+    }
+
+    #texto1{
+        background-color: white;
+        color: black;
     }
 
     #pie{
         
     }
-
-
-
-
-
-
 
 @media all and (max-width: 992px) {
     #todo{
