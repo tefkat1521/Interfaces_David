@@ -64,7 +64,7 @@
         height: 20em;
         align-items: center;
         justify-content:space-around;
-        width: 80%;
+        width: 100%;
     }
     #sesion input{
         background-color: gray;
@@ -95,8 +95,9 @@
         display: grid;
         grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
         grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
-        width: 80%;
+        width: 100%;
         justify-self: center;
+        gap: 50px;
         
         
     }
@@ -121,22 +122,28 @@
         
     }
     #imagen1{
-        border: solid black 5px;
+        
+        width: 90%;
         
         
     }
     #imagen2{
-        border: solid black 5px;
+        width: 90%;
         
     }
 
     #imagen1 img, #imagen2 img{
         width: 100%;
+        border: solid black 5px;
+        box-sizing: border-box;
     }
 
-    #texto1{
+    #texto1, #texto2{
         background-color: white;
         color: black;
+        width: 90%;
+        box-sizing: border-box;
+        border: solid black 5px;
     }
 
     #pie{
