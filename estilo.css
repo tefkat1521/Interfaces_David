@@ -148,7 +148,13 @@
     }
 
     #pie{
-        
+        background-color: black;
+        color: white;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        font-size: 12px;
     }
 
 @media all and (max-width: 992px) {
