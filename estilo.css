@@ -6,7 +6,7 @@
     gap: 10px;
 }
 
-#texto2, #textoMedio, #textoArriba, cabecera_menu:first-child{
+#texto2, #textoMedio, #textoArriba, #logo{
     display:none;
 }
 
@@ -168,9 +168,17 @@
     }
 
 @media all and (max-width: 992px) {
-    #textoMedio, #textoArriba,#cabecera_menu:first-child{
-        display: none;
+    #todo{
+
     }
+
+    #textoMedio, #textoArriba,#logo{
+        display: block;
+    }
+
+         #cabecera_menu:first-child{
+            flex-grow: 1;
+         }
 }
 
 @media all and (min-width: 1024px) {
