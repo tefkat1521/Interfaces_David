@@ -6,6 +6,10 @@
     gap: 10px;
 }
 
+#texto2, #textoMedio, #textoArriba, cabecera_menu:first-child{
+    display:none;
+}
+
 
     #cabecera {
         display: grid;
@@ -164,15 +168,11 @@
     }
 
 @media all and (max-width: 992px) {
-    #todo{
-        height: 100%;
-        background-color: rgb(136, 136, 136);
+    #textoMedio, #textoArriba,#cabecera_menu:first-child{
+        display: none;
     }
 }
 
 @media all and (min-width: 1024px) {
-    #todo{
-        height: 100%;
-        background-color: rgb(136, 136, 136);
-    }
+
 }
