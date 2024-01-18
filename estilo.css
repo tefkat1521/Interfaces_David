@@ -17,18 +17,18 @@
         grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
         grid-template-columns: auto;
         grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
-         /* width: 100%;  */
+         width: 100%; 
     }
 
     
 
     #cabecera_menu {
-        /* background-color: orange; */
+        background-color: orange;
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
+        align-items: center;
         justify-content:space-around;
-        /* width: 100%; */
+        width: 100%;
         height: 2em;
         
     }
@@ -73,7 +73,7 @@
         height: 15em;
         align-items: center;
         justify-content:space-around;
-        /* width: 100%; */
+        width: 100%;
     }
     #sesion input{
         background-color: gray;
