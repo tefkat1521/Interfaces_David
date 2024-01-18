@@ -172,7 +172,7 @@
         font-size: 12px;
     }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 1000px) {
 
     #todo{
         font-size: 20px;
