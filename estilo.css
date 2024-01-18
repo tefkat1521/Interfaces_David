@@ -25,7 +25,7 @@
     #cabecera_menu {
         background-color: orange;
         display: flex;
-        flex-direction: column;
+        flex-direction: eow;
         align-items: center;
         justify-content:space-around;
         width: 100%;
@@ -68,7 +68,7 @@
         color: white;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
         width: auto;
         height: 15em;
         align-items: center;
