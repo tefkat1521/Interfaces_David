@@ -4,11 +4,13 @@
     /* height: 100%; */
     font-size: 30px;
     gap: 10px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(228, 228, 228);
+    color: white;
     /* width: 100%; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#texto2, #textoMedio, #textoArriba, #logo{
+#texto2, #textoMedio, #textoArriba, #logo, #flecha{
     display:none;
 }
 
@@ -19,12 +21,13 @@
         grid-template-columns: auto;
         grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
          width: 100%; 
+         background-color: white;
     }
 
     
 
     #cabecera_menu {
-        background-color: orange;
+        background-color: rgb(231, 148, 92, 96%);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -41,6 +44,7 @@
 
 
     #redes {
+        
         margin-left: auto; /* Esto alinea el elemento al final a la derecha */
     }
     
@@ -56,6 +60,8 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        background-color: rgb(228, 228, 228);
+         
         
     }
 
@@ -63,9 +69,16 @@
     width: 80%;
     
     }
+    #imagenInicial{
+        display: flex;
+        justify-content: center;
+            /* Centra horizontalmente el contenido */
+            align-items: center;
+            /* Centra verticalmente el contenido */
+    }
 
     #sesion{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(236, 236, 236);
         color: white;
         display: flex;
         flex-wrap: wrap;
@@ -74,7 +87,7 @@
         height: 15em;
         align-items: center;
         justify-content:space-around;
-        width: 100%;
+        /* width: 100%; */
     }
     #sesion input{
         background-color: gray;
@@ -107,15 +120,19 @@
     }
     #sesion img{
         width: 2em;
+        
         }
 
     #medio{
+        background-color: rgb(243, 243, 243);
         display: grid;
         grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
         grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
         width: 100%;
         justify-self: center;
-        gap: 50px;
+        gap: 3em;
+        
+        background-color: rgb(228, 228, 228);
         
         
     }
@@ -174,7 +191,7 @@
         font-size: 12px;
     }
 
-@media all and (min-width: 900px) {
+@media all and (min-width: 768px) {
 
     #todo{
         font-size: 20px;
@@ -201,8 +218,65 @@
     #imagen1{
         grid-area: imagen1;
     }
+    #textoMedio{
+        color: rgb(23, 114, 126);
+    }
+
+    #textoArriba {
+        background-color: gray;
+        color: white;
+        width: 80%;
+        justify-self: center;
+        height: 1.5em;
+        padding-top: 1em;
+        padding-left: 2em;
+        }
+        #medio{
+            width: 80%;
+            
+        }
+        
 }
 
-@media all and (min-width: 1024px) {
 
+
+@media all and (min-width: 1024px) {
+#inicial {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(39, 39, 46);
+        justify-content: space-evenly;
+
+    }
+    #flecha {
+        display: flex;
+        color: aliceblue;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bolder;
+        font-family: Bradley Hand, Comic Sans, cursive;
+        flex-grow: 1;
+        
+        }
+
+        #imagenInicial{
+            flex-grow:1;
+            width: auto;
+        }
+        #sesion{
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        #sesion, #sesion > *, #sesion input{
+            width: auto;
+            height: auto;
+        }
+        #cuadro1{
+        grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "texto1 imagen1";
+        }
 }
