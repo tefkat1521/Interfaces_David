@@ -1,12 +1,9 @@
 
 #todo{
     display: grid;
-    /* height: 100%; */
     font-size: 30px;
-    gap: 1em;
     background-color: rgb(228, 228, 228);
     color: white;
-    /* width: 100%; */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0.3em 0.3em 0.3em 0.3em;
     padding: 0.1em 0.1em 0.1em 0.1em;
@@ -19,9 +16,9 @@
 
     #cabecera {
         display: grid;
-        grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
+        grid-template-columns: 1fr;
         grid-template-columns: auto;
-        grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
+        grid-template-rows: auto;
          width: 100%; 
          background-color: white;
     }
@@ -137,7 +134,6 @@
         border-radius: 5px;
         height: auto;
         font-size: 1em;
-        /* width: fit-content; */
         padding: 7px 5px 7px 5px;
     }
     #sesion button:hover{
@@ -145,8 +141,14 @@
     }
     #sesion img{
         width: 2em;
-        
+        transition: width 1s linear 1s, transform 1s linear 1s;
         }
+
+    #sesion img:hover {
+	  width: 4em;
+	  transform: rotate(3600deg);
+	}
+
     #sesion li a{
         color:rgb(0, 141, 115);
         text-decoration: none;
@@ -158,12 +160,12 @@
     #medio{
         background-color: rgb(243, 243, 243);
         display: grid;
-        grid-template-columns: 1fr; /* Una columna que ocupa todo el ancho disponible */
-        grid-template-rows: auto; /* Ajusta las filas automáticamente según su contenido */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
         width: 100%;
         justify-self: center;
         gap: 3em;
-        
+        margin-bottom: 2em;
         background-color: rgb(228, 228, 228);
         
         
@@ -180,26 +182,19 @@
                 "texto1"
                 "imagen1";
             place-items: center;
-            padding: 2em;
+            padding: 1em;
     }
 
     #cuadro2{
         background-color: rgb(23, 114, 126);
         display: grid;
-        gap: 1em;
         justify-items: center;
         place-items: center;
         padding: 2em;
 
     }
-    #imagen1{ 
+    #imagen1, #imagen2{ 
         width: 100%;
-        padding: 0%;
-
-    }
-    #imagen2{
-        width: 100%;
-        
     }
 
     iframe {
@@ -218,7 +213,6 @@
         box-sizing: border-box;
     }
     #texto1, #texto2{
-        /* text-align: justify; */
         font-family: 'Roboto', sans-serif;
         background-color: white;
         color: rgb(105, 105, 105);
@@ -230,7 +224,7 @@
     #pie{
         background-color: black;
         color: white;
-        height: 50px;
+        height: 4em;
         display: flex;
         align-items: center;
         justify-content:space-around;
@@ -255,9 +249,6 @@
         opacity: 60%;
     }
 
-         #cabecera_menu:first-child{
-            flex-grow: 1;
-         }
     #grupoMenu{
         width: 80%;
         }
@@ -274,6 +265,7 @@
         height: 1.5em;
         padding-top: 1em;
         padding-left: 2em;
+        margin-top: 3em;
         }
         #medio{
             width: 80%;
@@ -308,7 +300,6 @@
 #textoArriba{
             animation: mymove 2s infinite;
             animation-delay: 2s;
-            /* animation-fill-mode:forwards; */
             animation-direction: alternate;
 }
         
@@ -345,11 +336,9 @@
         }
         #sesion{
             flex-direction: column;
-            /* margin:2em 4em 2em 4em ;
-            box-sizing: border-box; */
 
         }
-        #sesion, #sesion > *, #sesion input{
+        #sesion, #sesion input{
             width: auto;
             height: auto;
         }
@@ -369,9 +358,6 @@
             grid-template-columns: 1fr 1fr;
             grid-template-areas:
                 "texto2 imagen2";
-        }
-        #flecha,#imagenInicial,#sesion {
-                    /* flex: 1;   */
         }
 
         video{
