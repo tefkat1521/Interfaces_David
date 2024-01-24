@@ -225,7 +225,6 @@
         width: auto;
         height: auto;
         border-radius: 10px;
-        line-height: 2em;
     }
 
     #pie{
@@ -245,6 +244,10 @@
     }
     #textoMedio, #textoArriba,#logo{
         display: block;
+    }
+
+    #texto1{
+        line-height: 2em;
     }
     #logo{
         font-size: 1.6em;
@@ -387,7 +390,7 @@
             width: 40%;
         }
         #texto2{
-        margin: 0 0 0 5em ;
+        margin:  0 -1.5em 0 5em ;
         padding: 0.2em 0.5em 0.2em 1em;
         height: auto;
         line-height: 2em;
