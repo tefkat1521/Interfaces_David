@@ -1,4 +1,8 @@
 
+html{
+background-color: rgb(50, 63, 63);
+}
+
 #todo{
     display: grid;
     font-size: 30px;
@@ -8,6 +12,7 @@
     margin: 0.3em 0.3em 0.3em 0.3em;
     padding: 0.1em 0.1em 0.1em 0.1em;
 }
+
 
 #texto2, #textoMedio, #textoArriba, #logo, #flecha{
     display:none;
@@ -26,7 +31,7 @@
     
 
     #cabecera_menu {
-        background-color: rgb(231, 148, 92, 96%);
+        background-color: rgb(231, 148, 92);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -82,6 +87,7 @@
         justify-content: start;
         align-items: center;
         background-color: rgb(228, 228, 228);
+        gap: 1em;
          
         
     }
@@ -108,6 +114,7 @@
         justify-content:space-between;
         gap: 1em;
         font-size: 0.8em;
+        padding: 1em 0 1em 0;
 
     }
     #sesion input{
@@ -139,15 +146,15 @@
     #sesion button:hover{
         background-color:rgb(0, 33, 141);
     }
-    #sesion img{
-        width: 2em;
-        transition: width 1s linear 1s, transform 1s linear 1s;
-        }
+   #sesion img {
+       width: 2em;
+       transition: width 0.5s ease-in-out, transform 1s ease-in-out;
+   }
 
-    #sesion img:hover {
-	  width: 4em;
-	  transform: rotate(3600deg);
-	}
+   #sesion img:hover {
+       width: 4em;
+       transform: rotate(3600deg);
+   }
 
     #sesion li a{
         color:rgb(0, 141, 115);
@@ -222,13 +229,20 @@
     }
 
     #pie{
-        background-color: black;
-        color: white;
+        background-color: rgb(50, 63, 63);
         height: 4em;
         display: flex;
         align-items: center;
         justify-content:space-around;
         font-size: 12px;
+    }
+
+    #pie h3{
+        margin: 0;
+        padding: 0;
+    }
+    #pie img{
+        width: 2em;
     }
 
 @media all and (min-width: 768px) {
@@ -252,10 +266,6 @@
     #grupoMenu{
         width: 80%;
         }
-        
-    #textoMedio{
-        color: rgb(23, 114, 126);
-    }
 
     #textoArriba {
         background-color: gray;
@@ -271,36 +281,51 @@
             width: 80%;
             
         }
-        @keyframes mymove {
-        25% {
-            background-color: red;
-            
-
+        #textoMedio{
+            color: rgb(23, 114, 126);
+            text-align: center;
+            font-style: italic;
+            font-family: Bradley Hand, Comic Sans, cursive;
         }
+@keyframes mymove {
+    0% {
+        background-color: #3498db;
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+        opacity: 1;
+    }
 
-        50% {
-            background-color: orangered;
-            
+    25% {
+        background-color: #2ecc71;
+        transform: scale(1.2);
+        box-shadow: 0 0 15px rgba(46, 204, 113, 0.7);
+        opacity: 0.8;
+    }
 
+    50% {
+        background-color: #e74c3c;
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(231, 76, 60, 0.9);
+        opacity: 0.6;
+    }
 
-        }
+    75% {
+        background-color: #f39c12;
+        transform: scale(1.2);
+        box-shadow: 0 0 25px rgba(243, 156, 18, 1);
+        opacity: 0.8;
+    }
 
-        70% {
-            background-color: orange;
-            
-        }
-
-        100% {
-            background-color: yellow;
-            
-            width: 100%;
-        }
-    
+    100% {
+        background-color: #9b59b6;
+        transform: scale(1);
+        box-shadow: 0 0 30px rgba(155, 89, 182, 1);
+        opacity: 1;
+    }
 }
-#textoArriba{
-            animation: mymove 2s infinite;
-            animation-delay: 2s;
-            animation-direction: alternate;
+
+#textoArriba {
+    animation: mymove 4s infinite alternate;
 }
         
 }
@@ -344,10 +369,9 @@
         }
 
         #sesion{
-            padding:0em 2em 0em 2em;
+            padding:0.5em 2em 0.5em 2em;
             margin: 2em 0em 2em 0em;
         }
-
         #cuadro1{
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
@@ -376,11 +400,10 @@
             width: 40%;
         }
         #texto2{
-        margin:  0 -1.5em 0 5em ;
+        margin:  0 -1em 0 5em ;
         padding: 0.2em 0.5em 0.2em 1em;
         height: auto;
         line-height: 2em;
         font-weight:100;
-        
         }
 }
