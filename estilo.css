@@ -11,7 +11,7 @@ background-color: rgb(50, 63, 63);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0.3em 0.3em 0.3em 0.3em;
     padding: 0.1em 0.1em 0.1em 0.1em;
-    width: 100%;
+    width: 100vh;
 }
 
 #redes a img:hover{
@@ -254,6 +254,7 @@ background-color: rgb(50, 63, 63);
 
     #todo{
         font-size: 20px;
+        width: 100%;
     }
     #textoMedio, #textoArriba,#logo{
         display: block;
