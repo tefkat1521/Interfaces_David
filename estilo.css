@@ -13,6 +13,10 @@ background-color: rgb(50, 63, 63);
     padding: 0.1em 0.1em 0.1em 0.1em;
 }
 
+a :hover{
+    background-color: rgb(23, 114, 126);
+}
+
 
 #texto2, #textoMedio, #textoArriba, #logo, #flecha{
     display:none;
