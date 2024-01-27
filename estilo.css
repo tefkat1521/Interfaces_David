@@ -254,7 +254,7 @@ background-color: rgb(50, 63, 63);
 
     #todo{
         font-size: 20px;
-        width: 100%;
+        width: auto;
     }
     #textoMedio, #textoArriba,#logo{
         display: block;
